@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home_page"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#880808">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Drops of Blood"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:padding="20dp"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/usericon"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button android:id="@+id/post_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="Post"
+            android:textColor="#880808"
+            android:textSize="20dp"/>
+
+        <Button android:id="@+id/message_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="Message"
+            android:textColor="#880808"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Choose Blood Type:"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:background="#b20000"/>
+
+        <RadioGroup android:id="@+id/RadioGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TableRow>
+
+                    <RadioButton android:id="@+id/Oplus_btn"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/bloodgrpbtn"
+                        android:text="O+"
+                        />
+
+                    <RadioButton android:id="@+id/Ominus_btn"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/bloodgrpbtn"
+                        android:text="O-"
+                        />
+
+                    <RadioButton android:id="@+id/Aplus_btn"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/bloodgrpbtn"
+                        android:text="A+"
+                        />
+
+                    <RadioButton android:id="@+id/Aminus_btn"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/bloodgrpbtn"
+                        android:text="A-" />
+                </TableRow>
+
+                <TableRow>
+                    <!--                <RadioGroup android:id="@+id/RadioGroup2"-->
+                    <!--                    android:orientation="horizontal"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_weight="1">-->
+
+                    <RadioButton android:id="@+id/ABplus_btn"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/bloodgrpbtn"
+                        android:text="AB+"
+                        android:textSize="12dp"
+                        />
+
+                    <RadioButton android:id="@+id/ABminus_btn"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/bloodgrpbtn"
+                        android:text="AB-"
+                        />
+
+                    <RadioButton android:id="@+id/Bplus_btn"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/bloodgrpbtn"
+                        android:text="B+"
+                        />
+
+                    <RadioButton android:id="@+id/Bminus_btn"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/bloodgrpbtn"
+                        android:text="B-"
+                        />
+                </TableRow>
+            </TableLayout>
+        </RadioGroup>
+        <Button
+            android:id="@+id/select_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Select"
+            android:backgroundTint="@color/white"
+            android:textColor="#b20000"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+        <Button
+            android:id="@+id/donorlist_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="See Donor List"
+            android:backgroundTint="@color/white"
+            android:textColor="#b20000 "
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+    <!--    <TextView android:id="@+id/show_donor_list"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:gravity="center"-->
+    <!--        android:textSize="20dp"-->
+    <!--        android:padding="5dp"/>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_weight="1">-->
+
+    <!--        <EditText-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:layout_gravity="bottom"-->
+    <!--            android:text="Send SMS...."-->
+    <!--            android:textSize="20dp"/>-->
+
+    <!--        <Button android:id="@+id/sendmsg_btn"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="bottom"-->
+    <!--            android:background="@drawable/send"/>-->
+
+    <!--    </LinearLayout>-->
+</LinearLayout>
